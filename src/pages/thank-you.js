@@ -5,7 +5,7 @@ const ThankYouPage = () => (
 <Layout>
     <div className="flex-center">
         <h3>Thank you!</h3>
-        <p>Add a redirect?</p>
+        <p>Add a redirect??</p>
     </div>
 </Layout>
 )
