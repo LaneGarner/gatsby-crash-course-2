@@ -1,5 +1,5 @@
 import React from "react"
-import ReCAPTCHA from "react-google-recaptcha"
+// import ReCAPTCHA from "react-google-recaptcha"
 import Layout from "../components/layout"
 
 const ContactFormPage = () => (
@@ -20,9 +20,9 @@ const ContactFormPage = () => (
                 <label htmlFor="message">Message</label><br />
                 <textarea id="message" name="message" />
             </div>
-            <div>
+            {/* <div>
                 <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
-            </div>
+            </div> */}
             <div className="flex-center">
                 <button type="submit">Send</button>
             </div>
