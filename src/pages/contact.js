@@ -10,7 +10,7 @@ const ContactFormPage = () => (
         <input type="hidden" name="form-name" value="Contact Form" />
         <div>
             <label htmlFor="name">Name:</label><br />
-            <input type="text" id="email" name="email" />
+            <input type="text" id="name" name="name" />
         </div>
         <div>
             <label htmlFor="email">Email:</label><br />
@@ -23,6 +23,7 @@ const ContactFormPage = () => (
         <div className="flex-center">
             <button type="submit">Send</button>
         </div>
+        <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
         </form>
     </div>
 </Layout>
