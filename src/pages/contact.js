@@ -21,7 +21,7 @@ const ContactFormPage = () => (
                 <textarea id="message" name="message" />
             </div>
             <div>
-                <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} />
+                <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
             </div>
             <div className="flex-center">
                 <button type="submit">Send</button>
