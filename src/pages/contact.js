@@ -6,6 +6,7 @@ const ContactFormPage = () => (
     <Layout>
         <div className="flex-center">
             <h1>Contact</h1>
+            <p>Want to get in touch? Use the form below to hire me, ask me questions, give me feedback on my site, etc.</p>
             <form 
                 className="flex-center" 
                 name="feedback" 
