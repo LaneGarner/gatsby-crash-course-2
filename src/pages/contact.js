@@ -1,5 +1,5 @@
 import React from "react"
-// import ReCAPTCHA from "react-google-recaptcha"
+import ReCAPTCHA from "react-google-recaptcha"
 import Layout from "../components/layout"
 
 const ContactFormPage = () => (
@@ -20,8 +20,9 @@ const ContactFormPage = () => (
                 <label htmlFor="message">Message:</label><br />
                 <textarea id="message" name="message" />
             </div>
-            <div data-netlify-recaptcha="true"></div>
-            {/* <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} /> */}
+            <div>
+                <ReCAPTCHA sitekey={process.env.SITE_RECAPTCHA_KEY} />
+            </div>
             <div className="flex-center">
                 <button type="submit">Send</button>
             </div>
