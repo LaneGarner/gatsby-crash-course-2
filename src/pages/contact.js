@@ -20,10 +20,10 @@ const ContactFormPage = () => (
             <label htmlFor="message">Message:</label><br />
             <textarea id="message" name="message" />
         </div>
+        <ReCAPTCHA sitekey={process.env.GATSBY_RECAPTCHA_KEY} />
         <div className="flex-center">
             <button type="submit">Send</button>
         </div>
-        <ReCAPTCHA sitekey="{process.env.GATSBY_RECAPTCHA_KEY}" />
         </form>
     </div>
 </Layout>
