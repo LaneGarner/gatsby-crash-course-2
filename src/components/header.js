@@ -8,6 +8,7 @@ const Header = ({ siteTitle }) => (
     style={{
       background: `#272727`,
       marginBottom: `0`,
+      height: "11em"
     }}
   >
     <div
@@ -36,9 +37,7 @@ const Header = ({ siteTitle }) => (
         >
           <Logo width="122.3365" height="92.13775" />
         </div>
-          <h1 style={{ margin: ".5em" }}>
-          {siteTitle}
-      </h1>
+          <h1 style={{ margin: ".5em" }}>{siteTitle}</h1>
       </Link>
     </div>
   </header>

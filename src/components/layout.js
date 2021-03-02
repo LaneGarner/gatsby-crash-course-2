@@ -12,6 +12,7 @@ import Menu from "./menu";
 
 
 import Header from "./header"
+import Footer from "./footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -27,25 +28,27 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Menu />
+      <div style={{
+        position: "fixed",
+        left: 0,
+        top: 0,
+        width: "100vw",
+      }}>
+        <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+        <Menu />
+      </div>
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
+          margin: `15em auto`,
+          width: "80%",
+          // maxWidth: 960,
+          minHeight: "70vh",
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Lane Garner
-          {/* <a href="https://www.gatsbyjs.com">Gatsby</a> */}
-        </footer>
       </div>
+        <Footer />
     </>
   )
 }

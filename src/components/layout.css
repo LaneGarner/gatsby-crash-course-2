@@ -1,3 +1,7 @@
+:root {
+  --turquoise: #367F83;
+}
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -59,7 +63,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  color: green;
+  color: var(--turquoise);
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
