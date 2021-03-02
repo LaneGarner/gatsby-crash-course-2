@@ -6,7 +6,7 @@ const ContactFormPage = () => (
     <Layout>
         <div className="flex-center">
             <h1>Contact</h1>
-            <form name="Contact Form" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/thank-you">
+            <form name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/thank-you">
             <input type="hidden" name="form-name" value="Contact Form" />
             <div>
                 <label htmlFor="name">Name:</label><br />
