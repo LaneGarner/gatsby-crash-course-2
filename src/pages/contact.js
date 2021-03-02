@@ -6,23 +6,23 @@ const ContactFormPage = () => (
     <Layout>
         <div className="flex-center">
             <h1>Contact</h1>
-            <form name="feedback" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+            <form className="flex-center" name="feedback" method="POST" data-netlify-recaptcha="true" data-netlify="true">
             <input type="hidden" name="form-name" value="feedback" />
             <div>
-                <label htmlFor="name">Name</label><br />
+                <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" />
             </div>
             <div>
-                <label htmlFor="email">Email</label><br />
+                <label htmlFor="email">Email:</label>
                 <input type="email" id="email" name="email" />
             </div>
             <div>
-                <label htmlFor="message">Message</label><br />
+                <label htmlFor="message">Message:</label>
                 <textarea id="message" name="message" />
             </div>
-            <div>
+            {/* <div> */}
                 <ReCAPTCHA sitekey={process.env.GATSBY_SITE_RECAPTCHA_KEY} />
-            </div>
+            {/* </div> */}
             <div className="flex-center">
                 <button type="submit">Send</button>
             </div>
