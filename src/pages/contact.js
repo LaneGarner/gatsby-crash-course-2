@@ -6,18 +6,18 @@ const ContactFormPage = () => (
     <Layout>
         <div className="flex-center">
             <h1>Contact</h1>
-            <form name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/thank-you">
+            <form name="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true">
             <input type="hidden" name="form-name" value="contact-form" />
             <div>
-                <label htmlFor="name">Name</label><br />
+                <label htmlFor="name">Name:</label><br />
                 <input type="text" id="name" name="name" />
             </div>
             <div>
-                <label htmlFor="email">Email</label><br />
+                <label htmlFor="email">Email:</label><br />
                 <input type="email" id="email" name="email" />
             </div>
             <div>
-                <label htmlFor="message">Message</label><br />
+                <label htmlFor="message">Message:</label><br />
                 <textarea id="message" name="message" />
             </div>
             <div>
