@@ -4,7 +4,10 @@ import Layout from "../components/layout"
 const Contact = () => {
     return (
         <Layout>
-            <form action="SUBMIT" data-netlify="true" className="flex-center">
+            <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+                <input type="hidden" name="bot-field" />
+                <input type="hidden" name="form-name" value="contact" />
+            {/* <form method="POST" data-netlify="true" className="flex-center"> */}
                 <div class="field">
                     <label htmlFor="nameInput">Name</label>
                     <input id="nameInput" name="nameInput" type="text" placeholder="name"/>
