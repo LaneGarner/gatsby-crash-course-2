@@ -42,9 +42,8 @@ const Layout = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          © {new Date().getFullYear()}, Lane Garner
+          {/* <a href="https://www.gatsbyjs.com">Gatsby</a> */}
         </footer>
       </div>
     </>
