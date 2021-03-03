@@ -12,7 +12,7 @@ import Menu from "./menu";
 
 
 import Header from "./header"
-import Footer from "./footer"
+import Footer from "./footer/footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
