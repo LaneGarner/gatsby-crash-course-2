@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 
 import { SiTwitter, SiLinkedin, SiGithub } from "react-icons/si";
@@ -7,24 +6,24 @@ import "./footer.css"
 const Footer = () => (
     <footer className="footer flex-center">
     <div>
-    <Link to="https://github.com/LaneGarner" target="_blank">
+    <a href="https://github.com/LaneGarner" target="_blank" rel="noreferrer">
         <div className="flex-center">
             <SiGithub size="2em" />
             GitHub
         </div>
-    </Link>
-    <Link to="https://www.linkedin.com/in/lanegarner" target="_blank">
+    </a>
+    <a href="https://www.linkedin.com/in/lanegarner" target="_blank" rel="noreferrer">
         <div className="flex-center">
             <SiLinkedin size="2em" />
             LinkedIn
         </div>
-    </Link>
-    <Link to="https://twitter.com/lanegarner" target="_blank">
+    </a>
+    <a href="https://twitter.com/lanegarner" target="_blank" rel="noreferrer">
         <div className="flex-center">
             <SiTwitter size="2em" />
             Twitter
         </div>
-    </Link>
+    </a>
     </div>
     © {new Date().getFullYear()}, Lane Garner
 
