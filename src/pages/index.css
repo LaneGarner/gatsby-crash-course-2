@@ -1,10 +1,11 @@
 .card-container {
     display: flex;
-    /* align-items: space-around; */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-    margin: 1em;
+    margin: 0 1.5em 3em 1.5em;
     background-color: #333;
     width: 300px;
     height: 400px;
